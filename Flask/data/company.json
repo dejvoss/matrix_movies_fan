@@ -1,7 +1,17 @@
 [
     {
-        "name": "Matrix",
+        "name": "The Matrix",
         "description": "The Matrix was first released in the United States on March 31, 1999, and grossed over $460 million worldwide. It was well-received by many critics and won four Academy Awards, as well as other accolades, including BAFTA Awards and Saturn Awards. The Matrix was praised for its innovative visual effects, action sequences, cinematography and entertainment value. The film is considered to be among the best science fiction films of all time, and was added to the National Film Registry for preservation in 2012. The success of the film led to the release of two feature film sequels in 2003, The Matrix Reloaded and The Matrix Revolutions, which were also written and directed by the Wachowskis. The Matrix franchise was further expanded through the production of comic books, video games and animated short films, with which the Wachowskis were heavily involved. The franchise has also inspired books and theories expanding on some of the religious and philosophical ideas alluded to in the films. A fourth film is scheduled for release on May 21, 2021.",
         "image_source": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg"
+    },
+    {
+        "name": "The Matrix Reloaded",
+        "description": "is a 2003 American science fiction action film written and directed by the Wachowskis.[a] It is the first sequel to The Matrix, and the second installment in The Matrix film franchise. Reloaded premiered on May 7, 2003, in Westwood, Los Angeles, California, and went on general release by Warner Bros. in North American theaters on May 15, 2003, and around the world during the latter half of that month. It was also screened out of competition at the 2003 Cannes Film Festival.[6] The video game Enter the Matrix and The Animatrix, a collection of short animations, supported and expanded the storyline of the film.",
+        "image_source": "https://upload.wikimedia.org/wikipedia/en/b/ba/Poster_-_The_Matrix_Reloaded.jpg"
+    },
+    {
+        "name": "The Matrix Revolutions",
+        "description": "The Matrix Revolutions is a 2003 American science fiction action film written and directed by the Wachowskis.[a] It was the third installment of The Matrix film franchise, released six months following The Matrix Reloaded. The film was released simultaneously in 60 countries on November 5, 2003. While being the final entry in the original trilogy of the series, the Matrix storyline is continued in The Matrix Online. It was the first live-action feature film to be released in both regular and IMAX theaters at the same time. Despite having a mixed reception from critics, the film grossed $427.3 million worldwide. A fourth Matrix film began production in February 2020.",
+        "image_source": "https://upload.wikimedia.org/wikipedia/en/3/34/Matrix_revolutions_ver7.jpg"
     }
 ]
