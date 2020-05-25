@@ -18,3 +18,9 @@ RUN sudo apt-get -q update && \
 
 # Install wxPython
 RUN pip3 install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-18.04/ wxPython
+
+RUN bash -cl "rustup install nightly && rustup default nightly"
+
+RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sudo sh
+
+RUN npm i -g prettier
