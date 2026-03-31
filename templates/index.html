@@ -3,61 +3,78 @@
       <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-preview">
-          <a href="post.html">
+          <a href="{{ url_for('about') }}">
             <h2 class="post-title">
-              Man must explore, and this is exploration at its greatest
+              The Red Pill: How The Matrix Changed Cinema Forever
             </h2>
             <h3 class="post-subtitle">
-              Problems look mighty small from 150 miles up
+              From bullet time to philosophical awakening — a look at why the 1999 masterpiece still resonates today.
             </h3>
           </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 24, 2019</p>
+          <p class="post-meta">> system.log
+            <a href="#">Morpheus</a>
+            // 1999.03.31</p>
         </div>
         <hr>
         <div class="post-preview">
-          <a href="post.html">
+          <a href="{{ url_for('about_member', member_name='Matrix2') }}">
             <h2 class="post-title">
-              I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+              The Burly Brawl: Behind the 100 Agent Smiths
             </h2>
+            <h3 class="post-subtitle">
+              How groundbreaking VFX and months of choreography created the most ambitious fight scene in film history.
+            </h3>
           </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 18, 2019</p>
+          <p class="post-meta">> system.log
+            <a href="#">The Architect</a>
+            // 2003.05.15</p>
         </div>
         <hr>
         <div class="post-preview">
-          <a href="post.html">
+          <a href="{{ url_for('about_member', member_name='Matrix3') }}">
             <h2 class="post-title">
-              Science has not yet mastered prophecy
+              The Battle of Zion: Humanity's Last Stand
             </h2>
             <h3 class="post-subtitle">
-              We predict too much for the next year and yet far too little for the next ten.
+              Inside the epic siege sequence that pushed visual effects to their absolute limits.
             </h3>
           </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on August 24, 2019</p>
+          <p class="post-meta">> system.log
+            <a href="#">Commander Lock</a>
+            // 2003.11.05</p>
         </div>
         <hr>
         <div class="post-preview">
-          <a href="post.html">
+          <a href="{{ url_for('about_member', member_name='Matrix') }}">
             <h2 class="post-title">
-              Failure is not an option
+              "There Is No Spoon" — The Philosophy Behind The Matrix
             </h2>
             <h3 class="post-subtitle">
-              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+              Plato's Cave, Descartes' demon, and Buddhist enlightenment — the ideas that shaped a franchise.
             </h3>
           </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on July 8, 2019</p>
+          <p class="post-meta">> system.log
+            <a href="#">The Oracle</a>
+            // 1999.03.31</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="{{ url_for('about_member', member_name='Matrix4') }}">
+            <h2 class="post-title">
+              Resurrections: Returning to the Source After 18 Years
+            </h2>
+            <h3 class="post-subtitle">
+              Lana Wachowski's meta-commentary on reboots, nostalgia, and the systems that keep us plugged in.
+            </h3>
+          </a>
+          <p class="post-meta">> system.log
+            <a href="#">The Analyst</a>
+            // 2021.12.22</p>
         </div>
         <hr>
         <!-- Pager -->
         <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+          <a class="btn btn-primary float-right" href="{{ url_for('about') }}">Explore The Films &rarr;</a>
         </div>
       </div>
     </div>

@@ -1,54 +1,52 @@
 {% extends 'base.html' %}
 {% block content %}
 
-
-    <h2>{{ page_title }}</h2>
-    <p>The Matrix is an American media franchise created by the Wachowskis. The series primarily consists of a trilogy of science fiction action films beginning with The Matrix (1999) and continuing with two sequels, The Matrix Reloaded and The Matrix Revolutions (both in 2003), all written and directed by the Wachowskis and produced by Joel Silver. The franchise is owned by Warner Bros., which distributed the films along with Village Roadshow Pictures. The latter, along with Silver Pictures, are the two production companies that worked on all three films.
-    </p>
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h2>{{ page_title }}</h2>
+        <p>The Matrix is an American media franchise created by the Wachowskis — a landmark in science fiction that questioned the nature of reality itself. Beginning with The Matrix (1999), the series expanded into a full trilogy and eventually a fourth film, The Matrix Resurrections (2021). With its fusion of cyberpunk aesthetics, martial arts action, and deep philosophical themes drawn from Plato, Baudrillard, and Buddhist thought, The Matrix didn't just entertain — it changed how we think about technology, free will, and the world around us.</p>
+      </div>
+    </div>
 
     {% for member in company %}
 
-    
-
-    <div class="row featurette">
+    <div class="matrix-movie-card">
+      <div class="row featurette">
 
         {% if loop.index % 2 != 0 %}
 
-    <div class="col-md-7">
-    <h3><a href="/about/{{ member.url }}">{{ loop.index }} {{ member.name }}</a></h3>
-    <p>
-
-    {{ member.description }}
-    
-    </p>
-    </div>
-    <div class="col-md-5">
-    <img class="featurette-image img-responsive" src="{{ member.image_source }}">
-    </div>
+        <div class="col-md-7">
+          <div class="movie-year">// {{ member.year }}</div>
+          <h3><a href="/about/{{ member.url }}">{{ member.name }}</a></h3>
+          <div class="movie-tagline">"{{ member.tagline }}"</div>
+          <p>{{ member.description }}</p>
+          <div class="iconic-quote">
+            "{{ member.iconic_quote }}"
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="{{ member.image_source }}" alt="{{ member.name }} poster">
+        </div>
 
         {% else %}
 
         <div class="col-md-5">
-    <img class="featurette-image img-responsive" src="{{ member.image_source }}">
-    </div>
-    <div class="col-md-7">
-    <h3><a href="/about/{{ member.url }}">{{ loop.index }} {{ member.name }}</a></h3>
-    <p>
-
-    {{ member.description }}
-    
-    </p>
-    </div>
+          <img class="featurette-image img-responsive" src="{{ member.image_source }}" alt="{{ member.name }} poster">
+        </div>
+        <div class="col-md-7">
+          <div class="movie-year">// {{ member.year }}</div>
+          <h3><a href="/about/{{ member.url }}">{{ member.name }}</a></h3>
+          <div class="movie-tagline">"{{ member.tagline }}"</div>
+          <p>{{ member.description }}</p>
+          <div class="iconic-quote">
+            "{{ member.iconic_quote }}"
+          </div>
+        </div>
 
         {% endif %}
 
+      </div>
     </div>
-
-    {% if loop.index != 4 %}
-
-    <hr class="featurette-divider">
-    
-    {% endif %}
 
     {% endfor %}
 

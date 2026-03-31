@@ -1,26 +1,38 @@
 [
     {
         "name": "The Matrix",
-        "description": "The Matrix was first released in the United States on March 31, 1999, and grossed over $460 million worldwide. It was well-received by many critics and won four Academy Awards, as well as other accolades, including BAFTA Awards and Saturn Awards. The Matrix was praised for its innovative visual effects, action sequences, cinematography and entertainment value. The film is considered to be among the best science fiction films of all time, and was added to the National Film Registry for preservation in 2012. The success of the film led to the release of two feature film sequels in 2003, The Matrix Reloaded and The Matrix Revolutions, which were also written and directed by the Wachowskis. The Matrix franchise was further expanded through the production of comic books, video games and animated short films, with which the Wachowskis were heavily involved. The franchise has also inspired books and theories expanding on some of the religious and philosophical ideas alluded to in the films. A fourth film is scheduled for release on May 21, 2021.",
+        "year": 1999,
+        "tagline": "What is the Matrix?",
+        "description": "The Matrix (1999) is the groundbreaking sci-fi masterpiece that redefined cinema. Written and directed by the Wachowskis, it follows Thomas Anderson, a computer programmer who discovers that reality as he knows it is a simulated world created by sentient machines to subdue humanity. Under the alias Neo, he is contacted by the mysterious Morpheus, who offers him a choice: take the blue pill and forget everything, or take the red pill and see how deep the rabbit hole goes. Neo chooses the red pill, awakening to a devastated real world where humans are farmed for energy. With training in martial arts downloaded directly into his mind, Neo begins to bend the rules of the Matrix and ultimately embraces his destiny as 'The One' — a prophesied savior who can end the war between humans and machines. The film grossed over $460 million worldwide, won four Academy Awards for its revolutionary visual effects including the iconic 'bullet time' technique, and was added to the National Film Registry in 2012. It remains one of the most influential science fiction films ever made.",
         "image_source": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
-        "url": "Matrix"
+        "url": "Matrix",
+        "iconic_quote": "There is no spoon."
     },
     {
         "name": "The Matrix Reloaded",
-        "description": "is a 2003 American science fiction action film written and directed by the Wachowskis.[a] It is the first sequel to The Matrix, and the second installment in The Matrix film franchise. Reloaded premiered on May 7, 2003, in Westwood, Los Angeles, California, and went on general release by Warner Bros. in North American theaters on May 15, 2003, and around the world during the latter half of that month. It was also screened out of competition at the 2003 Cannes Film Festival.[6] The video game Enter the Matrix and The Animatrix, a collection of short animations, supported and expanded the storyline of the film.",
+        "year": 2003,
+        "tagline": "Free your mind.",
+        "description": "The Matrix Reloaded (2003) raises the stakes as Neo, now fully realized as The One, must venture deeper into the Matrix and confront a new level of control. Zion, the last human city buried deep underground, faces annihilation as an army of 250,000 Sentinels drills toward it. Neo, Trinity, and Morpheus race to reach the Source of the Matrix — its mainframe — where Neo is told he must make an impossible choice that will determine the fate of humanity. Along the way, the film delivers breathtaking action: the legendary Burly Brawl where Neo fights a hundred Agent Smiths, and the jaw-dropping freeway chase sequence that took months to film on a purpose-built highway. The film also introduces the Merovingian, the Keymaker, and the enigmatic Architect, expanding the mythology far beyond the original. Reloaded premiered at the 2003 Cannes Film Festival and earned over $742 million worldwide, proving that audiences were hungry for more of the Matrix universe.",
         "image_source": "https://upload.wikimedia.org/wikipedia/en/b/ba/Poster_-_The_Matrix_Reloaded.jpg",
-        "url": "Matrix2"
+        "url": "Matrix2",
+        "iconic_quote": "Choice. The problem is choice."
     },
     {
         "name": "The Matrix Revolutions",
-        "description": "The Matrix Revolutions is a 2003 American science fiction action film written and directed by the Wachowskis.[a] It was the third installment of The Matrix film franchise, released six months following The Matrix Reloaded. The film was released simultaneously in 60 countries on November 5, 2003. While being the final entry in the original trilogy of the series, the Matrix storyline is continued in The Matrix Online. It was the first live-action feature film to be released in both regular and IMAX theaters at the same time. Despite having a mixed reception from critics, the film grossed $427.3 million worldwide. A fourth Matrix film began production in February 2020.",
+        "year": 2003,
+        "tagline": "Everything that has a beginning has an end.",
+        "description": "The Matrix Revolutions (2003) brings the original trilogy to its epic conclusion. With Neo trapped between the Matrix and the machine world, and the Sentinel army hours from destroying Zion, every character must face their ultimate purpose. The Battle of Zion is one of cinema's most massive war sequences — thousands of Sentinels pouring through the dock ceiling while human pilots in APU mechs desperately hold the line. Meanwhile, Neo makes a daring journey to the Machine City itself, offering the machines a deal: he will stop the rogue Agent Smith — who has become a virus threatening to consume both the Matrix and the machine world — in exchange for peace. The climactic showdown between Neo and Smith in a rain-drenched Matrix, with the fate of two civilizations hanging in the balance, remains one of sci-fi's most powerful finales. Released simultaneously in 60 countries on November 5, 2003, it was the first live-action film to debut in both regular and IMAX theaters at the same time, grossing $427 million worldwide.",
         "image_source": "https://upload.wikimedia.org/wikipedia/en/3/34/Matrix_revolutions_ver7.jpg",
-        "url": "Matrix3"
+        "url": "Matrix3",
+        "iconic_quote": "Everything that has a beginning has an end."
     },
     {
-        "name": "The Matrix 4",
-        "description": "The Matrix 4 is an upcoming American science fiction action film and the fourth installment in The Matrix franchise. The film is co-written and directed by Lana Wachowski, one of the two Wachowskis who directed the previous three films. Keanu Reeves, Carrie-Anne Moss, Jada Pinkett Smith, and Lambert Wilson reprise their roles from previous films in the series. The film will be a joint production by Warner Bros. Pictures and Village Roadshow Pictures and is scheduled to be released on May 21, 2021.",
-        "image_source": "https://www.animatedtimes.com/wp-content/uploads/2020/04/3-8.png",
-        "url": "Matrix4"
+        "name": "The Matrix Resurrections",
+        "year": 2021,
+        "tagline": "Return to the source.",
+        "description": "The Matrix Resurrections (2021) reopens the door to the Matrix 18 years after the original trilogy. Directed by Lana Wachowski, the film finds Thomas Anderson living as a successful video game designer in San Francisco, haunted by memories he's told aren't real and medicated with blue pills prescribed by his therapist, the Analyst. When a new version of Morpheus and a rebel named Bugs free him from this new, more sophisticated Matrix, Neo discovers that the machines resurrected both him and Trinity after their sacrifices in Revolutions, keeping them close together as a power source fueled by their connection. The film is both a sequel and a meta-commentary on reboots, sequels, and the nature of storytelling itself. With Keanu Reeves and Carrie-Anne Moss reprising their iconic roles, along with new cast members Yahya Abdul-Mateen II, Jessica Henwick, Jonathan Groff, and Neil Patrick Harris, the film explores how the world has changed — both within the Matrix and in our own reality — while reaffirming that the power of choice and love can break any system of control.",
+        "image_source": "https://upload.wikimedia.org/wikipedia/en/d/d2/The_Matrix_Resurrections.jpg",
+        "url": "Matrix4",
+        "iconic_quote": "The choice is an illusion. You already know what you have to do."
     }
 ]

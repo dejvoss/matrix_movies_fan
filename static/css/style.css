@@ -1,3 +1,362 @@
+/* ===== MATRIX THEME ===== */
+
+/* Import monospace font for Matrix feel */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* Digital rain canvas background */
+#matrix-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000;
+}
+
+/* Base overrides */
+body {
+    background-color: #000 !important;
+    color: #00ff41 !important;
+    font-family: 'Share Tech Mono', 'Courier New', monospace !important;
+}
+
+p {
+    color: #b0ffb0;
+    line-height: 1.7;
+}
+
+a {
+    color: #00ff41 !important;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.4);
+    transition: all 0.3s;
+}
+
+a:hover, a:focus {
+    color: #fff !important;
+    text-shadow: 0 0 15px rgba(0, 255, 65, 0.8);
+    text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Share Tech Mono', 'Courier New', monospace !important;
+    color: #00ff41 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+hr {
+    border-color: #0a3d0a;
+}
+
+/* Navigation */
+#mainNav {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    border-bottom: 1px solid #0a3d0a !important;
+    backdrop-filter: blur(10px);
+}
+
+#mainNav .navbar-brand {
+    color: #00ff41 !important;
+    font-family: 'Share Tech Mono', monospace !important;
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.7);
+    font-size: 1.5rem;
+}
+
+#mainNav .navbar-nav > li.nav-item > a {
+    color: #00ff41 !important;
+    font-family: 'Share Tech Mono', monospace !important;
+}
+
+#mainNav .navbar-nav > li.nav-item > a:hover {
+    color: #fff !important;
+    text-shadow: 0 0 15px rgba(0, 255, 65, 0.8);
+}
+
+#mainNav .navbar-toggler {
+    color: #00ff41 !important;
+    border-color: #0a3d0a;
+}
+
+#mainNav.is-fixed {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    border-bottom: 1px solid #0a3d0a !important;
+}
+
+#mainNav.is-fixed .navbar-brand {
+    color: #00ff41 !important;
+}
+
+#mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: #00ff41 !important;
+}
+
+/* Header / Masthead */
+header.masthead {
+    background-color: #000 !important;
+    position: relative;
+}
+
+header.masthead .overlay {
+    background-color: #000 !important;
+    opacity: 0.7;
+}
+
+header.masthead .site-heading h1 {
+    color: #00ff41 !important;
+    text-shadow: 0 0 20px rgba(0, 255, 65, 0.8), 0 0 40px rgba(0, 255, 65, 0.4);
+    font-family: 'Share Tech Mono', monospace !important;
+    letter-spacing: 8px;
+}
+
+header.masthead .site-heading .subheading {
+    color: #b0ffb0 !important;
+    font-family: 'Share Tech Mono', monospace !important;
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+/* Post previews on home page */
+.post-preview > a {
+    color: #00ff41 !important;
+}
+
+.post-preview > a:hover {
+    color: #fff !important;
+}
+
+.post-preview > a > .post-title {
+    color: #00ff41;
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.4);
+}
+
+.post-preview > a > .post-subtitle {
+    color: #80ff80;
+}
+
+.post-preview > .post-meta {
+    color: #2d8a2d !important;
+    font-style: normal;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.post-preview > .post-meta > a {
+    color: #00ff41 !important;
+}
+
+/* Movie cards on about page */
+.matrix-movie-card {
+    background: rgba(0, 255, 65, 0.03);
+    border: 1px solid #0a3d0a;
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.matrix-movie-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00ff41, transparent);
+    animation: scanline 3s linear infinite;
+}
+
+@keyframes scanline {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.matrix-movie-card:hover {
+    border-color: #00ff41;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.15);
+    background: rgba(0, 255, 65, 0.06);
+}
+
+.matrix-movie-card img {
+    border: 1px solid #0a3d0a;
+    transition: all 0.3s ease;
+    max-width: 100%;
+}
+
+.matrix-movie-card:hover img {
+    border-color: #00ff41;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.3);
+}
+
+.movie-year {
+    color: #2d8a2d;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.movie-tagline {
+    color: #00ff41;
+    font-style: italic;
+    font-size: 18px;
+    margin: 10px 0 20px;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+}
+
+.iconic-quote {
+    border-left: 2px solid #00ff41;
+    padding: 10px 20px;
+    margin: 20px 0;
+    color: #00ff41;
+    font-style: italic;
+    background: rgba(0, 255, 65, 0.03);
+}
+
+/* Member/detail page */
+.member-detail img {
+    border: 1px solid #0a3d0a;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.15);
+}
+
+.member-detail h2 {
+    letter-spacing: 3px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: transparent !important;
+    border: 1px solid #00ff41 !important;
+    color: #00ff41 !important;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #00ff41 !important;
+    border-color: #00ff41 !important;
+    color: #000 !important;
+    text-shadow: none;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    border-top: 1px solid #0a3d0a;
+}
+
+footer .copyright {
+    color: #2d8a2d;
+}
+
+footer .fa-stack .fa-circle {
+    color: #0a3d0a;
+    transition: color 0.3s;
+}
+
+footer a:hover .fa-circle {
+    color: #00ff41 !important;
+}
+
+/* Contact form */
+.floating-label-form-group {
+    border-bottom-color: #0a3d0a !important;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    color: #00ff41 !important;
+    font-family: 'Share Tech Mono', monospace !important;
+    background: transparent !important;
+}
+
+.floating-label-form-group input::-webkit-input-placeholder,
+.floating-label-form-group textarea::-webkit-input-placeholder {
+    color: #2d8a2d !important;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #00ff41 !important;
+}
+
+form .form-group:first-child .floating-label-form-group {
+    border-top-color: #0a3d0a !important;
+}
+
+/* Selection */
+::selection {
+    background: #00ff41 !important;
+    color: #000 !important;
+}
+
+::-moz-selection {
+    background: #00ff41 !important;
+    color: #000 !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0a3d0a;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00ff41;
+}
+
+/* Featurette image */
 .featurette-image {
     width: 100%;
+}
+
+/* Glitch text effect for main heading */
+.glitch {
+    position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch::before {
+    animation: glitch-1 2s infinite linear alternate-reverse;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    -webkit-text-stroke: 1px rgba(0, 255, 65, 0.3);
+}
+
+.glitch::after {
+    animation: glitch-2 3s infinite linear alternate-reverse;
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+    -webkit-text-stroke: 1px rgba(0, 255, 65, 0.3);
+}
+
+@keyframes glitch-1 {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-2px); }
+    40% { transform: translateX(2px); }
+    60% { transform: translateX(-1px); }
+    80% { transform: translateX(1px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes glitch-2 {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(2px); }
+    40% { transform: translateX(-2px); }
+    60% { transform: translateX(1px); }
+    80% { transform: translateX(-1px); }
+    100% { transform: translateX(0); }
 }
