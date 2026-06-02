@@ -1,15 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="row">
+<div class="matrix-movie-card member-detail">
+  <div class="row">
     <div class="col-md-5">
-        <img src="{{ member.image_source }}" alt="Profile image for {{ member.name }}" />
-        <h2 class="col-md-7">{{ member.name }}</h2>
+      <img src="{{ member.image_source }}" alt="Poster for {{ member.name }}" class="featurette-image img-responsive" />
     </div>
-</div>
-
-<div class="col-md-12">
-    <p>{{ member.description }}</p>
+    <div class="col-md-7">
+      <div class="movie-year">// {{ member.year }}</div>
+      <h2>{{ member.name }}</h2>
+      <div class="movie-tagline">"{{ member.tagline }}"</div>
+      <p>{{ member.description }}</p>
+      <div class="iconic-quote">
+        "{{ member.iconic_quote }}"
+      </div>
+      <a href="{{ url_for('about') }}" class="btn btn-primary mt-4">&larr; Back to All Films</a>
+    </div>
+  </div>
 </div>
 
 {% endblock %}

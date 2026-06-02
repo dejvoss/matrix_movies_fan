@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
     <link  rel="stylesheet" href="{{ url_for('static', filename='css/clean-blog.min.css') }}">
     <link  rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>Hello Flask</title>
+    <title>The Matrix Fan Page</title>
 </head>
 <body>
+    <!-- Matrix digital rain background -->
+    <canvas id="matrix-bg"></canvas>
+
     <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="{{ url_for('index') }}">Matrix</a>
+      <a class="navbar-brand" href="{{ url_for('index') }}">[ MATRIX ]</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -24,10 +27,7 @@
             <a class="nav-link" href="{{ url_for('index') }}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('about') }}">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('careers') }}">Careers</a>
+            <a class="nav-link" href="{{ url_for('about') }}">The Films</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
@@ -44,8 +44,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Matrix</h1>
-            <span class="subheading">That’s how it is with people. Nobody cares how it works as long as it works.</span>
+            <h1 class="glitch" data-text="THE MATRIX">THE MATRIX</h1>
+            <span class="subheading">Wake up, Neo... The Matrix has you.</span>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@
 
   <!-- Main Content -->
   <div class="container">
-    
+
         {% block content %}
         {% endblock %}
 
@@ -93,7 +93,7 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+          <p class="copyright text-muted">The Matrix is a registered trademark of Warner Bros. | Fan Page &copy; 2024</p>
         </div>
       </div>
     </div>
@@ -105,6 +105,49 @@
 
   <!-- Custom scripts for this template -->
   <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+  <!-- Matrix digital rain effect -->
+  <script>
+    const canvas = document.getElementById('matrix-bg');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const chars = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const fontSize = 14;
+    const columns = canvas.width / fontSize;
+    const drops = [];
+
+    for (let i = 0; i < columns; i++) {
+      drops[i] = Math.random() * -100;
+    }
+
+    function drawMatrix() {
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#00ff41';
+      ctx.font = fontSize + 'px monospace';
+
+      for (let i = 0; i < drops.length; i++) {
+        const text = chars[Math.floor(Math.random() * chars.length)];
+        ctx.fillStyle = 'rgba(0, 255, 65, ' + (Math.random() * 0.5 + 0.1) + ')';
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+          drops[i] = 0;
+        }
+        drops[i]++;
+      }
+    }
+
+    setInterval(drawMatrix, 50);
+
+    window.addEventListener('resize', function() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
 
 </body>
 </html>
